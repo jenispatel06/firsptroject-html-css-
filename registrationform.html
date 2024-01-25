@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(250, 195, 195);
+        }
+        div{
+            background-image: linear-gradient(to right top, #d16ba5, #c777b9,
+             #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
+              #52cffe, #41dfff, #46eefa, #5ffbf1);
+            padding-left:2% ;
+            border: 2px solid black;
+            width: 550px;
+            height: 103vh;
+            border-radius: 10px;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Registration Form</h1>
+        <table cellspacing="8px">
+        <form name="frmreg" action="">
+
+        <tr>    
+            <td><label for="firstName" >First Name:</label></td>
+            <td><input type="text" name="firstName" id="fname"  placeholder="Your Name"></td>
+        </tr>
+        <tr>
+            <td><label for="lastName" >Last Name:</label></td>
+            <td><input type="text" name="lastName" id="lname"  placeholder="Your Surname"></td>
+        </tr>
+        <tr>
+            <td><label for="mail" >Email ID:</label></td>
+            <td><input type="email" name="mail" id="mail"  placeholder="abc@gmail.com"></td>
+        </tr>
+        <tr>
+            <td><label for="mNumber" >Last Name:</label></td>
+            <td><input type="tel" name="mNumber" id="mobno"  placeholder="0123456789"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td><input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea name="address" id="address" cols="20" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" id="city" name="city" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td><label for="pincode">Pincode:</label></td>
+            <td><input type="" id="pincode" name="pincode" maxlength="6" minlength="6"></td>
+        </tr>
+        <tr>
+            <td><label for="country">Country:</label></td>
+            <td><input type="text" id="country" name="country" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td><label for="hobby">Hobbies:</label>
+            <td><input type="checkbox" id="drawing">
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" id="drawing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="singing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" id="dancing">
+            <label for="sketching">Sketching</label>
+            <input type="checkbox" id="sketching">
+            <label for="other">Other</label>
+            <input type="checkbox" id="other">
+            <input type="text" for="other" maxlength="20" placeholder="Ex-Teaching"></td>
+        </tr>
+
+
+        <tr>
+            <td><label for="qualification">Qualification:</label>
+            <td><input type="checkbox" id="highSchool">
+            <label for="highSchool">High School(10th)</label><br>
+            <input type="checkbox" id="higherSchool">
+            <label for="higherSchool">Higher School(12th)</label><br>
+            <input type="checkbox" id="graduation">
+            <label for="Graduation">Graduation(Bachelors)</label><br>
+            <input type="checkbox" id="postGraduation">
+            <label for="postGraduation">Post Graduation(Masters)</label></td>
+        </tr>
+
+
+        <tr>
+            <td><label for="qualification">Course Applied for:</label></td>
+            <td><input type="checkbox" id="bca">
+            <label for="bca">BCA</label><br>
+            <input type="checkbox" id="bcom">
+            <label for="bcom">B.COM</label><br>
+            <input type="checkbox" id="bsc">
+            <label for="bsc">B.SC</label><br>
+            <input type="checkbox" id="mca">
+            <label for="mca">MCA</label><br>
+            <input type="checkbox" id="mcom">
+            <label for="mcom">M.COM</label><br>
+            <input type="checkbox" id="msc">
+            <label for="msc">M.SC</label><br></td>
+        </tr>
+
+
+        <tr>
+            <td><button >Submit</button></td>
+            <td><button>Reset</button></td>     
+        </tr>
+        </form>
+    </table>
+    </div>
+</body>
+</html>

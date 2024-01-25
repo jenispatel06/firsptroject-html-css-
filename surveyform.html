@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .main{
+            background-image: url(./coffeefrm.jpg);
+            background-size: cover;
+            padding-left: 30px;
+            width: 480px;
+            height: 720px;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+        .ans{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3%;
+        }
+        input{
+            background-color: rgb(14, 72, 77);
+            color: aliceblue;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="frmSurvey" method="post">
+    <div class="main">
+        <h1>Coffee Brand Survey</h1>
+
+        <p>Do You Prefer going out for coffee or drinking it at home?</p>
+        <input type="button" id="coffee" value="Going Out" style="height: 30px; width: 150px;">
+        <input type="button" id="coffee" value="Drinking at Home" style="height: 30px; width: 150px;">
+        <input type="button" id="coffee" value="Only at the Office" style="height: 30px; width: 150px;"><br><br>
+
+        <p>Do you prefer an espresso based coffee or filter coffee?</p>
+        <input type="button" id="coffee" value="Espresso based" style="height: 30px; width: 150px;">
+        <input type="button" id="coffee" value="Filter" style="height: 30px; width: 150px;">
+        <input type="button" id="coffee" value="Other" style="height: 30px; width: 150px;"><br><br>
+
+        <p>What brands of coffee do you usually buy?</p>
+        <input type="text" id="Brand" style="height: 30px; width: 450px;">
+
+        <p>What is the important criteria when buying coffee?</p>
+        <input type="button" id="coffee" value="Brand Name" style="height: 30px; width: 150px;">
+        <input type="button" id="coffee" value="Taste" style="height: 30px; width: 150px;">
+        <input type="button" id="coffee" value="Price" style="height: 30px; width: 150px;"><br><br>
+
+        <p>What attributes are important to you when consuming coffee at a coffee shop?</p>
+       
+        
+
+        <label for="veriety" style="font-weight: bold;">Variety of <br> Coffee flavors:</label>
+        
+        <input type="radio" id="important" name="veriety">
+        <label for="important">Important</label>
+        <input type="radio" id="notimportant" name="veriety">
+        <label for="notimportant">Not Important</label>
+        <input type="radio" id="neutral" name="veriety">
+        <label for="neutral">Neutral</label><br><br>
+
+
+        <label for="veriety" style="font-weight: bold;">Sales   <br> Promotion:</label>
+        
+        <input type="radio" id="important" name="veriety">
+        <label for="important">Important</label>
+        <input type="radio" id="notimportant" name="veriety">
+        <label for="notimportant">Not Important</label>
+        <input type="radio" id="neutral" name="veriety">
+        <label for="neutral">Neutral</label><br><br>
+
+        <label for="veriety" style="font-weight: bold;">Quality of<br> Coffee beans:</label>
+        
+        <input type="radio" id="important" name="veriety">
+        <label for="important">Important</label>
+        <input type="radio" id="notimportant" name="veriety">
+        <label for="notimportant">Not Important</label>
+        <input type="radio" id="neutral" name="veriety">
+        <label for="neutral">Neutral</label>
+        <br><br>
+
+
+        <div style="display: flex; justify-content: center;">
+            <button style="background-color: rgb(14, 72, 77); color: aliceblue; height: 30px; width: 200px;">Submit</button>
+        </div>
+        
+    </div>
+</form>
+</body>
+</html>

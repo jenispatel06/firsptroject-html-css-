@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 90px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-image: url(./loginform.gif);
+            background-size: cover;
+        }
+        .parent{
+            width: 800px;
+            height: 500px;
+            display: flex;
+        }
+        .child-one{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(7, 7, 30);
+            width: 50%;
+            color: white;
+        }
+        .child-two{
+            background-color: aliceblue;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        input:focus{
+            background-color: rgb(195, 211, 246);
+        }
+        @media only screen and (orientation:  Portrait) {
+       div {
+            flex-direction: column;
+        }
+}
+    </style>
+</head>
+
+<body>
+    <form action=" "  method="get" autocomplete="off">
+    <div class="parent">
+        <div class="child-one">
+
+            <h2><img src="./hicon1.jpg" alt="" style=" border-radius: 50px; height: 10px; width: 35px; height: 30px; padding-top: 20px;"> TOP HTML</h2>
+            <p>Login Using social media to get <br> quick access</p><br><br>
+
+            <input type="button" value="Signin with facebook"  style="height: 40px; width: 200px; color: white; background-color: rgb(60, 60, 139);"><br><br>
+
+            <input type="button" value="Signin eith twitter" style="height: 40px; width: 200px; color: white; background-color: rgb(43, 176, 234);"><br><br>
+
+            <input type="button" value="Signin with google" style="height: 40px; width: 200px; color: white; background-color: rgb(222, 20, 6);"><br><br>
+        </div>
+
+        <div class="child-two" >
+
+            <h1>Login to your account</h1>
+            <p>Don't have an account? <a href="" style=" text-decoration: none;">Sign Up Free!</a></p>
+
+            <input type="email" id="mail" placeholder="Email Address" accesskey="m" tabindex="1" style="height: 30px; width: 250px; text-transform: uppercase;" required><br><br>
+
+            <input type="password" id="pswd" placeholder="Password" accesskey="p" tabindex="2" style="height: 30px; width: 250px;" required>
+
+            <a href="" style="text-decoration: none; float: right;">Forgot Password?</a><br><br>
+
+            <button value="Login With Email" style="height: 40px; width: 250px; color: white; background-color: rgb(57, 57, 216);">Login With Email</button>
+
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>

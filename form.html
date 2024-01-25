@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            padding: 5%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-image: linear-gradient( rgb(17, 55, 66) , rgb(75, 105, 36));
+        }
+       div{
+        background-color: rgb(192, 196, 196);
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 0 10px 10px  black;
+        height: 80vh;
+        width: 25vw;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+       }
+       label{
+        font-size: larger;
+       }
+       input{
+        border-radius: 5px;
+        height: 30px;
+        width: 250px;
+        box-shadow: 0 0 10px gray;
+        text-transform: uppercase;
+       }
+       p{
+        font-weight: 600;
+        font-size: medium;
+       }
+       a{
+        font-size:smaller;
+        text-decoration: none;
+       }
+       .design{
+        text-decoration: overline;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="form">
+
+        <h1>Login</h1>
+
+        <form action="frmLogin" method="post">
+            <label for="userName" style="display: block;">User <span class="design">N</span>ame</label>
+            <input type="text" name="userName" id="uname"  placeholder="User Name" tabindex="1" accesskey="N"><br><br>
+
+            <label for="password" style="display: block;"><span class="design">P</span>assword</label>
+            <input type="password" name="password" id="pwd" placeholder="Password" tabindex="2" accesskey="P"><br>
+
+            <a href="" style="float: right;  padding-right:60px ;">Forget Password?</a><br><br><br>
+
+            <input type="button" value="LOGIN" style="border-radius: 200px; background-image:  linear-gradient(to right, rgb(184, 32, 161) , rgb(38, 146, 156));"><br><br>
+
+            <p>Or Sign Up Using</p>
+            <i class="fa-brands fa-facebook" style="font-size: xx-large;"></i>
+            <i class="fa-brands fa-square-twitter" style="color: #0f89e6; font-size: xx-large;"></i>
+            <i class="fa-brands fa-google" style="color: #d54211; font-size: xx-large;"></i><br><br><br>
+            
+            <p>Or Sign Up Using</p>
+            <a href="">Sign Up</a>
+        </form>
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+        }
+        header{
+            height: 10%;
+            background-color: rgb(41, 96, 96);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu{
+            width: 100%;
+            background-color: rgb(143, 186, 181);
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
+        }
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .div-two{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          
+        }
+        .imgsec{
+            
+            width: 100%;
+        }
+        .listsec{
+            
+            width: 100%;
+        }
+        .footer{
+            height:20% ;
+            width: 100%;
+        }
+        img{
+           width: 100%;
+           height: 200px;
+        }
+        @media  screen and (min-width:430px) {
+            .main{
+                width: 100vw;
+                height: 100vh;
+            }
+            .div-two{
+                height: 50vh;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .imgsec{
+                width: 60%;
+            }
+            .listsec{
+                 width: 50%;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                }
+            .footer{
+                width: 100vw;
+                height: 200px;
+                display: flex;
+                justify-content: space-between;           
+                
+            }
+            .images{
+                width: 33vw;
+            }
+            
+            }
+            @media screen and (max-width:430px){
+                .menu{
+                    display: none;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+           <h1>ASSIGNMENT</h1>
+        </header>
+        <div class="menu">
+           <a href="">Home</a>
+           <a href="">About</a>
+           <a href="">Contact us</a>
+           <a href="">Services</a>
+        </div>
+        <div class="div-two">
+            <div class="imgsec">
+              <img src="./image1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt error ut architecto fugit sapiente,
+                 explicabo ipsa temporibus eligendi optio quibusdam laborum dignissimos qui voluptatem adipisci? Voluptate fuga eos culpa.
+                 Veniam minus, excepturi quia, tenetur quaerat porro numquam distinctio ad nemo itaque voluptas facilis. 
+                 Necessitatibus soluta praesentium non quo repellat assumenda quas! Laborum, assumenda dicta in soluta, 
+                 quisquam aperiam fuga nihil odio libero omnis consequatur amet?</p>
+            </div>
+            <div class="listsec">
+              <ul>
+                <li>INDIA</li>
+                <li>AMERICA</li>
+                <li>CANADA</li>
+                <li>EUROPE</li>
+                <li>AUSTRALIA</li>
+                <li>FRANCE</li>
+                <li>GERMANY</li>
+               
+              </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div >
+                <img src="./image2.jpg" class="images" alt="">
+            </div>
+            <div>
+                <img src="./image4.jpg" class="images" alt="">
+            </div>
+            <div>
+                <img src="./image5.jpg" class="images" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

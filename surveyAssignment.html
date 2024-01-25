@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+       }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label{
+            font-weight: bolder;
+            font-size: larger;
+        }
+        input{
+            height: 3vh;
+            border-radius: 5px;
+        }
+        p{
+            font-weight: bold;
+        }
+        table{
+            width: 500px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .tab1{
+            height: auto;
+            width: 100vw;
+            overflow-x: scroll;
+        }
+        .tab2{
+            height: auto;
+            width: 100vw;
+            overflow-x: scroll;
+        }
+        .tab3{
+            height: auto;
+            width: 100vw;
+            overflow-x: scroll;
+        }
+        .tab4{
+            height: auto;
+            width: 100vw;
+            overflow-x: scroll;
+        }
+        th, td, tr{
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        tr  th {
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            text-align:center;
+            font-size: 40px;
+        }
+        table tr:first-child th:first-child {
+            border: none;
+        }
+        header{
+            width: 100%;
+            background-color: rgb(70, 68, 68);
+            font-weight: bold;
+            font-size: xx-large;
+            color: white;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            width: 100vw;
+       }
+       .div-one{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+       }
+       .div-two{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100vw;
+       }
+        .sec-two{
+            display: flex;
+            gap: 5%;
+        }
+        .rbuton{
+            display: block;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body><div class="main">
+    <form action="">
+        <header><h1>Student Survey</h1></header>
+   
+        
+        <div class="div-one">
+        <div class="sec-one">
+            <label for="sname" style="display: block;">School name</label>
+            <input type="text" id="sname">
+        </div>
+
+        <label for="name" style="display: block;">Student Name</label>
+        <div class="sec-two">
+            
+            <div>
+                <input type="text" style="display: block; width: 100%;">
+                <p style="font-weight: lighter;">First Name</p>
+            </div>
+            <div>
+                <input type="text" style="display: block; width: 100%;">
+                <p style="font-weight: lighter;">Last Name</p>
+            </div>
+        </div>
+        <div class="sec-three">
+                <label for="date" style="display: block;">Date</label>
+                <input type="date" id="date">
+        </div>
+        <div class="sec-four">
+            <p>How long have you been a student here?</p>
+            <select name="age" id="age">
+                <option value="select">Please Select</option>
+                <option value="less">Less than a Month</option>
+                <option value="months">1-6 Months</option>
+                <option value="year">6 Month to 1 Year</option>
+                <option value="more">More than Year</option>
+                <option value="years">1-3 Years</option>
+                <option value="threeyear">More than Three Years</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="div-two">
+        <p>Please rate the following aspects of your education.</p>
+        <label> Curriculum and classes for the term</label>
+        <table class="tab1" cellspacing="0px">
+            <tr>
+                <th style="border: none;"></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Neutral</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr for="radio1" >
+                <th >The class descriptions accurately described the content.</th>
+                <td><input type="radio" id="radio1" name="radio1" class="rbuton" ></td>
+                <td><input type="radio" id="radio1" name="radio1" class="rbuton" ></td>
+                <td><input type="radio" id="radio1" name="radio1"  class="rbuton"></td>
+                <td><input type="radio" id="radio1" name="radio1"  class="rbuton"></td>
+                <td><input type="radio" id="radio1" name="radio1"  class="rbuton"></td>
+            </tr>
+            <tr for="radio2">
+                <th>I was academically prepared for the classes.</th>
+                <td><input type="radio" id="radio2" name="radio2" class="rbuton"></td>
+                <td><input type="radio" id="radio2" name="radio2" class="rbuton"></td>
+                <td><input type="radio" id="radio2" name="radio2" class="rbuton"></td>
+                <td><input type="radio" id="radio2" name="radio2" class="rbuton"></td>
+                <td><input type="radio" id="radio2" name="radio2" class="rbuton"></td>
+            </tr>
+            <tr for="radio3">
+                <th>The class sizes were appropriate.</th>
+                <td><input type="radio" id="radio3" name="radio3" class="rbuton"></td>
+                <td><input type="radio" id="radio3" name="radio3" class="rbuton"></td>
+                <td><input type="radio" id="radio3" name="radio3" class="rbuton"></td>
+                <td><input type="radio" id="radio3" name="radio3" class="rbuton"></td>
+                <td><input type="radio" id="radio3" name="radio3" class="rbuton"></td>
+            </tr>
+            <tr for="radio4">
+                <th>The classes started and ended on time.</th>
+                <td><input type="radio" id="radio4" name="radio4" class="rbuton"></td>
+                <td><input type="radio" id="radio4" name="radio4" class="rbuton"></td>
+                <td><input type="radio" id="radio4" name="radio4" class="rbuton"></td>
+                <td><input type="radio" id="radio4" name="radio4" class="rbuton"></td>
+                <td><input type="radio" id="radio4" name="radio4" class="rbuton"></td>
+            </tr>
+            <tr for="radio5">
+                <th>The classes increased my knowledge of the subject matter.</th>
+                <td><input type="radio" id="radio5" name="radio5" class="rbuton"></td>
+                <td><input type="radio" id="radio5" name="radio5" class="rbuton"></td>
+                <td><input type="radio" id="radio5" name="radio5" class="rbuton"></td>
+                <td><input type="radio" id="radio5" name="radio5" class="rbuton"></td>
+                <td><input type="radio" id="radio5" name="radio5" class="rbuton"></td>
+            </tr>
+            <tr for="radio6">
+                <th>The overall quality of the classes was excellent.</th>
+                <td><input type="radio" id="radio6" name="radio6" class="rbuton"></td>
+                <td><input type="radio" id="radio6" name="radio6" class="rbuton"></td>
+                <td><input type="radio" id="radio6" name="radio6" class="rbuton"></td>
+                <td><input type="radio" id="radio6" name="radio6" class="rbuton"></td>
+                <td><input type="radio" id="radio6" name="radio6" class="rbuton"></td>
+            </tr>
+            <tr for="radio7">
+                <th>I would recommend these classes to other students.</th>
+                <td><input type="radio" id="radio7" name="radio7" class="rbuton"></td>
+                <td><input type="radio" id="radio7" name="radio7" class="rbuton"></td>
+                <td><input type="radio" id="radio7" name="radio7" class="rbuton"></td>
+                <td><input type="radio" id="radio7" name="radio7" class="rbuton"></td>
+                <td><input type="radio" id="radio7" name="radio7" class="rbuton"></td>
+            </tr>
+        </table>
+
+
+
+        <label>Materials</label>
+        <table  class="tab2" cellspacing="0px">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Neutral</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr for="radio8" >
+                <th >The objectives and requirements for the classes were clearly stated.</th>
+                <td><input type="radio" id="radio8" name="radio8" class="rbuton" ></td>
+                <td><input type="radio" id="radio8" name="radio8" class="rbuton" ></td>
+                <td><input type="radio" id="radio8" name="radio8" class="rbuton" ></td>
+                <td><input type="radio" id="radio8" name="radio8" class="rbuton" ></td>
+                <td><input type="radio" id="radio8" name="radio8" class="rbuton" ></td>
+            </tr>
+            <tr for="radio9">
+                <th>The textbooks and learning materials were relevant and useful.</th>
+                <td><input type="radio" id="radio9" name="radio9" class="rbuton"></td>
+                <td><input type="radio" id="radio9" name="radio9" class="rbuton"></td>
+                <td><input type="radio" id="radio9" name="radio9" class="rbuton"></td>
+                <td><input type="radio" id="radio9" name="radio9" class="rbuton"></td>
+                <td><input type="radio" id="radio9" name="radio9" class="rbuton"></td>
+            </tr>
+            <tr for="radio10">
+                <th>The instructors were available and helpful to students outside of class.</th>
+                <td><input type="radio" id="radio10" name="radio10" class="rbuton"></td>
+                <td><input type="radio" id="radio10" name="radio10" class="rbuton"></td>
+                <td><input type="radio" id="radio10" name="radio10" class="rbuton"></td>
+                <td><input type="radio" id="radio10" name="radio10" class="rbuton"></td>
+                <td><input type="radio" id="radio10" name="radio10" class="rbuton"></td>
+            </tr>
+        </table>
+
+
+
+        <label>Instruction</label>
+        <table  class="tab3" cellspacing="0px">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Neutral</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr for="radio11" >
+                <th >The instructors were qualified to teach these classes.</th>
+                <td><input type="radio" id="radio11" name="radio11" class="rbuton" ></td>
+                <td><input type="radio" id="radio11" name="radio11" class="rbuton" ></td>
+                <td><input type="radio" id="radio11" name="radio11" class="rbuton" ></td>
+                <td><input type="radio" id="radio11" name="radio11" class="rbuton" ></td>
+                <td><input type="radio" id="radio11" name="radio11" class="rbuton" ></td>
+            </tr>
+            <tr for="radio12">
+                <th>The textbooks and learning materials were relevant and useful.</th>
+                <td><input type="radio" id="radio12" name="radio12" class="rbuton"></td>
+                <td><input type="radio" id="radio12" name="radio12" class="rbuton"></td>
+                <td><input type="radio" id="radio12" name="radio12" class="rbuton"></td>
+                <td><input type="radio" id="radio12" name="radio12" class="rbuton"></td>
+                <td><input type="radio" id="radio12" name="radio12" class="rbuton"></td>
+            </tr>
+            <tr for="radio13">
+                <th>The instructors were available and helpful to students outside of class.</th>
+                <td><input type="radio" id="radio13" name="radio13" class="rbuton"></td>
+                <td><input type="radio" id="radio13" name="radio13" class="rbuton"></td>
+                <td><input type="radio" id="radio13" name="radio13" class="rbuton"></td>
+                <td><input type="radio" id="radio13" name="radio13" class="rbuton"></td>
+                <td><input type="radio" id="radio13" name="radio13" class="rbuton"></td>
+            </tr>
+        </table>
+
+
+
+
+        <label>School environment</label>
+        <table  class="tab4" cellspacing="0px">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Neutral</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr for="radio11" >
+                <th >The physical classroom environments were clean and comfortable.</th>
+                <td><input type="radio" id="radio14" name="radio14" class="rbuton" ></td>
+                <td><input type="radio" id="radio14" name="radio14" class="rbuton" ></td>
+                <td><input type="radio" id="radio14" name="radio14" class="rbuton" ></td>
+                <td><input type="radio" id="radio14" name="radio14" class="rbuton" ></td>
+                <td><input type="radio" id="radio14" name="radio14"  class="rbuton"></td>
+            </tr>
+            <tr for="radio12">
+                <th>Library and on-site computers consistently made available.</th>
+                <td><input type="radio" id="radio15" name="radio15" class="rbuton"></td>
+                <td><input type="radio" id="radio15" name="radio15" class="rbuton"></td>
+                <td><input type="radio" id="radio15" name="radio15" class="rbuton"></td>
+                <td><input type="radio" id="radio15" name="radio15" class="rbuton"></td>
+                <td><input type="radio" id="radio15" name="radio15" class="rbuton"></td>
+            </tr>
+            <tr for="radio13">
+                <th>The common spaces were clean and comfortable.</th>
+                <td><input type="radio" id="radio16" name="radio16" class="rbuton"></td>
+                <td><input type="radio" id="radio16" name="radio16" class="rbuton"></td>
+                <td><input type="radio" id="radio16" name="radio16" class="rbuton"></td>
+                <td><input type="radio" id="radio16" name="radio16" class="rbuton"></td>
+                <td><input type="radio" id="radio16" name="radio16" class="rbuton"></td>
+            </tr>
+            <tr for="radio13">
+                <th>The school communicated institutional goals and relevant news to students.</th>
+                <td><input type="radio" id="radio17" name="radio17" class="rbuton"></td>
+                <td><input type="radio" id="radio17" name="radio17" class="rbuton"></td>
+                <td><input type="radio" id="radio17" name="radio17" class="rbuton"></td>
+                <td><input type="radio" id="radio17" name="radio17" class="rbuton"></td>
+                <td><input type="radio" id="radio17" name="radio17" class="rbuton"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="div-three">
+        <label for="rbutton">How likely are you to recommend our school to a friend or colleague?</label>
+        <input type="radio" value="Very Likely" id="rbutton" name="rbutton" class="rbuton"> Very likely
+        <input type="radio" value="Somewhat Likely" id="rbutton" name="rbutton"  class="rbuton"> Somewhat Likely
+        <input type="radio" value="Unsure" id="rbutton" name="rbutton" class="rbuton">Unsure
+        <input type="radio" value="Not Very Likely" id="rbutton" name="rbutton" class="rbuton">Not Very Likely
+        <input type="radio" value="Not Likely" id="rbutton" name="rbutton"  class="rbuton">Not Likely
+
+    </div>
+
+
+    <div class="div-four">
+
+    </div>
+
+
+
+
+</form>
+</div>
+</body>
+</html>
